@@ -1,0 +1,16 @@
+[project]
+name = "translator"
+version = "0.1.0"
+description = "enko helps translate between English-Korean"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "discord-py>=2.3.2",
+    "google-genai>=1.0.0",
+    "python-dotenv>=1.0.0",
+]
+
+[tool.deptry.package_module_name_map]
+"discord.py"     = "discord"
+"google-genai"   = "google"
+"python-dotenv"  = "dotenv"
