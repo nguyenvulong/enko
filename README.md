@@ -7,7 +7,7 @@ A Discord slash-command bot that auto-detects English or Korean input and transl
 ## 📁 Project Structure
 
 ```
-discord-translate-bot/
+enko/
 ├── bot.py              # Main bot logic
 ├── requirements.txt    # Python dependencies
 ├── .env.example        # Environment variable template
@@ -17,19 +17,30 @@ discord-translate-bot/
 ---
 
 ## ⚙️ Setup
+If you are using `uv`, simply do this instead
+
+```bash
+git clone https://github.com/nguyenvulong/enko.git
+cd enko
+
+uv venv --python=3.14
+source .venv/bin/activate
+uv sync
+
+```
 
 ### 1. Clone / copy the project
 
 ```bash
-cd discord-translate-bot
+git clone https://github.com/nguyenvulong/enko.git
+cd enko
 ```
 
-### 2. Create a virtual environment (recommended)
+### 2. Create a virtual environment
 
 ```bash
 python -m venv venv
-source venv/bin/activate      # Linux / macOS
-venv\Scripts\activate.bat     # Windows
+source venv/bin/activate
 ```
 
 ### 3. Install dependencies
